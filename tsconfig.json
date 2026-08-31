@@ -45,7 +45,10 @@
     "resolveJsonModule": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "moduleResolution": "NodeNext" // or "Bundler"
   },
   "include": ["src/**/*.ts", "src/**/*.cts", "src/**/*.mts", "src/**/*.d.ts"],
   "exclude": ["node_modules", "dist", "tests", "scripts", "examples"]
