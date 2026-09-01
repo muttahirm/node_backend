@@ -1,11 +1,11 @@
-import { UserRole } from '../modules/users/user.model.ts';
+// import { UserRole } from '../modules/users/user.model.ts';
 
 declare global {
   namespace Express {
     interface Request {
       user?: {
         id: string;
-        role: UserRole;
+        role: import('../modules/users/user.model.ts').UserRole;
       };
 
       validated?: {
@@ -16,3 +16,5 @@ declare global {
     }
   }
 }
+
+export {};
