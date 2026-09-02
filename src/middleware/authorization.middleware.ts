@@ -1,7 +1,7 @@
 import type { RequestHandler } from 'express';
 
 import { AppError } from '../errors/app-error.js';
-import type { UserRole } from '../modules/users/user.model.ts';
+import type { UserRole } from '../modules/users/user.entity.ts';
 
 export const authorize = (...allowedRoles: UserRole[]): RequestHandler => {
   return (request, _response, next): void => {

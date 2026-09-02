@@ -5,7 +5,7 @@ import type { JwtPayload, SignOptions } from 'jsonwebtoken';
 import { env } from '../config/environment.ts';
 import { AppError } from '../errors/app-error.ts';
 //fix it later
-import { UserRole } from '../modules/users/user.model.ts';
+import { UserRole } from '../modules/users/user.entity.ts';
 
 export interface AccessTokenPayload {
   userId: string;
