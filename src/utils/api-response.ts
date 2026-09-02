@@ -6,7 +6,7 @@ interface SuccessResponseOptions {
   meta?: unknown;
 }
 
-export const sendSuccessResponse = (
+export const sendSuccess = (
   response: Response,
   data: unknown,
   options: SuccessResponseOptions = {},
